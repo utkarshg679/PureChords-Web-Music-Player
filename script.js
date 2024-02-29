@@ -395,35 +395,5 @@ function handleVolume() {
 }
 
 handleVolume()
-function signuppressed(){
-    let signup = document.querySelector(".signup")
-    signup.addEventListener("click",(e)=>{
-        toggleForm("signup-form")
-    })
-}
-signuppressed()
-function loginpressed(){
-    let login = document.querySelector(".login")
-    login.addEventListener("click",(e)=>{
-        toggleForm("login-form")
-    })
-}
-loginpressed()
-function toggleForm(formId) {
-    const loginForm = document.getElementById('login-form');
-    const signupForm = document.getElementById('signup-form');
 
-    if (formId === 'signup-form') {
-        document.querySelector(".logincontainer").removeChild()
-    } else {
-        document.querySelector(".signupcontainer").removeChild()
-    }
-}
-function submitpressed(){
-    document.querySelector("#login-button").addEventListener("click" , (e)=>{
-        e.preventDefault();
-        document.querySelector(".loginsignup").style.display = "none"
-        document.querySelector(".loginsignup h2").innerHTML = "Welcome Back! Choose Your Mood.."
-    })
-}
 
